@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-white p-6 rounded-lg shadow-lg w-[450px] text-center">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4">🔍 Search Pokémon</h1>
+        <input type="text" id="pokemon-name" class="w-full p-2 border border-gray-300 rounded" 
+               placeholder="Enter Pokémon name or ID (e.g., pikachu or 25)">
+        <button onclick="fetchPokemon()" 
+                class="w-full bg-blue-600 text-white p-2 rounded mt-2 hover:bg-blue-700 transition">Search</button>
+        <button onclick="fetchRandomPokemon()" 
+                class="w-full bg-green-500 text-white p-2 rounded mt-2 hover:bg-green-600 transition">Random Pokémon</button>
+        <div id="output" class="mt-4"></div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
