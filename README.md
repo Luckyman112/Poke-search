@@ -16,7 +16,7 @@ Technologies
 
 How to Run  
 
-1. Clone the repo** or download ZIP  
+1. Clone the repo or download ZIP  
   git clone https://github.com/yourusername/poke-search.git
    cd poke-search
 
